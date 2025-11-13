@@ -1,4 +1,3 @@
-/* === src/service-worker.js === */
 // Service worker simple per cache d'actius estàtics (no és una solució completa Workbox, però útil per PWA bàsica)
 const CACHE_NAME = 'etiquetado-cache-v1'
 const urlsToCache = [
@@ -21,4 +20,3 @@ self.addEventListener('fetch', event => {
     caches.match(event.request).then(response => response || fetch(event.request))
   )
 })
-/* === end src/service-worker.js === */
