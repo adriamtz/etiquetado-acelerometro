@@ -1,4 +1,3 @@
-/* === src/App.jsx === */
 import React, { useEffect, useState, useRef } from 'react'
 
 const ESTADOS = [
@@ -199,4 +198,3 @@ export default function App() {
     </div>
   )
 }
-/* === end src/App.jsx === */
